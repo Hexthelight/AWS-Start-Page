@@ -1,5 +1,5 @@
 body {
-    background-color: #2e3440;
+    background-color: #004225;
     font-family: 'roboto';
 }
 
@@ -11,21 +11,21 @@ body {
     font-weight: lighter;
     text-align: left;
     font-size: 5rem;
-    color: #eceff4;
+    color: #FBF5F3;
     margin: 3.5rem auto 0 auto;
     line-height: 0rem;
     height: 1.9rem;
     width: 22rem;
-    background-image: linear-gradient(90.18deg, #8FBCBB 26.67%, #81A1C1 100%);
+    background-image: linear-gradient(90.18deg, #CCB872 26.67%, #B39C4D 100%);
 }
 
 #date {
-    color: #eceff4;
+    color: #FBF5F3;
     display: block;
     margin: 0 auto 0 auto;
     font-size: 1rem;
     text-transform: uppercase;
-    width: 30rem;
+    width: 24rem;
     text-align: center;
     letter-spacing: 4px;
 }
@@ -35,8 +35,8 @@ body {
 button {
     outline: none;
     margin: 5rem auto;
-    border: 3px solid #434c5e;
-    background: #eceff4;
+    border: 3px solid #1D6A48;
+    background: #FBF5F3;
     border-radius: 25px;
     font-family: monospace;
     display: flex;
@@ -82,7 +82,7 @@ button img {
   #outer-box {
     height: 100%;
     width: 100%;
-    background: #2e3440;
+    background: #004225;
     opacity: 100%;
     padding: 0;
   }
@@ -96,7 +96,7 @@ button img {
 
   #close {
       font-size: 3rem;
-      color: #eceff4;
+      color: #FBF5F3;
       padding: 1rem 2rem;
       position: absolute;
       right: 0rem;
@@ -105,8 +105,8 @@ button img {
 
   #searchbar input {
     border: 0;
-    border-bottom: 5px #eceff4 solid;
-    color: #eceff4;
+    border-bottom: 5px #FBF5F3 solid;
+    color: #FBF5F3;
     Font-size: 3rem;
     outline: none;
     z-index: 0;
@@ -116,20 +116,20 @@ button img {
   }
   
   #searchbar::placeholder {
-    color: #eceff4;
+    color: #FBF5F3;
     font-family: monospace;
   }
   
   #searchbar:focus {
     border: 0;
-    color: #eceff4;
-    border-bottom: 5px #eceff4 solid;
+    color: #FBF5F3;
+    border-bottom: 5px #FBF5F3 solid;
   }
 
 /* Weather */
 
 #weather-container{
-    color: #eceff4;
+    color: #FBF5F3;
     position: absolute;
     display: inline-grid;
     grid-template-columns: auto auto;
@@ -137,6 +137,12 @@ button img {
     grid-gap: 15px;
     right: 15%;
     top: 3%;
+}
+
+@media (max-width: 1500px) {
+    #weather-container{
+        right: 10%;
+    }
 }
 
 .weather-icon, .temperature-value, .temperature-description {
@@ -176,14 +182,15 @@ button img {
     position: absolute;
     right: 50%;
     top: 20.45rem;
-    color: #eceff4;
+    color: #FBF5F3;
     text-transform: uppercase;
     font-weight: bold;
-    background: #434c5e;
-    border: 1px solid #3B4252;
+    background: #1D6A48;
+    border: 1px solid #002918;
     border-radius: 50px 0px 0px 50px;
     padding: 1rem 0;
-    width: 11rem;
+    width: 15%;
+    max-width: 13rem;
     height: 19rem;
     z-index: 1;
     transition: 1s;
@@ -198,7 +205,7 @@ button img {
     cursor: pointer;
     clear: both;
     float: left; 
-    background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, #b48ead 50%);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, #B39C4D 50%);
     width: 0%;
     transition: 0.3s;
 }
@@ -224,7 +231,7 @@ button img {
 }
 
 .selector:hover:nth-child(6), .work-active{
-    width: 2.5rem;
+    width: 3.3rem;
 }
 
 
@@ -234,11 +241,12 @@ button img {
     position: absolute;
     top: 20.45rem;
     left:50%;
-    width: 11rem;
+    width: 15%;
+    max-width: 13rem;
     display: flex;
     flex-direction: column;
-    background: #434c5e;
-    border: 1px solid #3B4252;
+    background: #1D6A48;
+    border: 1px solid #002918;
     border-radius: 0px 50px 50px 0px;
     padding: 1rem 0;
     height: 19rem;
@@ -251,13 +259,13 @@ button img {
 }
 
 .link {
-    color: #eceff4;
+    color: #FBF5F3;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     margin: 1rem 0 1rem 1rem;
     width: 0%;
-    background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, #b48ead 50%);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, #B39C4D 50%);
     transition: 0.3s;
 }
 
@@ -274,15 +282,15 @@ button img {
 }
 
 .link:hover:nth-child(4) {
-    width: 3rem;
+    width: 4.4rem;
 }
 
 .link:hover:nth-child(5) {
-    width: 5rem;
+    width: 9rem;
 }
 
 .link:hover:nth-child(6) {
-    width: 3.8rem;
+    width: 8.1rem;
 }
 
 
@@ -292,11 +300,11 @@ button img {
     display: block;
     transition: 1s;
     margin: auto;
-    width: 21%;
+    width: 22%;
     max-width: 22rem;
     height: 21rem;
-    background: linear-gradient(106.34deg, #B48EAD 0%, #81A1C1 50.02%);
-    border: 1px solid #3B4252;
+    background: linear-gradient(106.34deg, #CCB872 0%, #B39C4D 50.02%);
+    border: 1px solid #002918;
     z-index: 0;
     border-radius: 50px;
 }
@@ -325,7 +333,7 @@ button img {
 }
 
 .item p{
-    color: #eceff4;
+    color: #FBF5F3;
     font-weight: bold;
     text-align: center;
     opacity: 0%;
